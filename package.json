@@ -36,6 +36,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "prettier": "^1.19.1"
   },
   "homepage": "https://blog.samuraime.com",
@@ -43,6 +44,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "yarn build && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
